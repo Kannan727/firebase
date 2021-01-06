@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".AddtrackActivity">
+
+    <TextView
+        android:id="@+id/viewtrack1"
+        android:layout_width="191dp"
+        android:layout_height="33dp"
+        android:layout_marginTop="24dp"
+        android:text="Tracks"
+        android:textAlignment="center"
+        app:layout_constraintTop_toBottomOf="@+id/button"
+        tools:layout_editor_absoluteX="59dp" />
+
+    <EditText
+        android:id="@+id/TrackName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="33dp"
+        android:layout_marginTop="84dp"
+        android:layout_marginEnd="185dp"
+        android:layout_marginBottom="22dp"
+        android:ems="10"
+        android:hint="Enter track name"
+        android:inputType="textPersonName"
+        android:textAlignment="viewStart"
+        app:layout_constraintBottom_toTopOf="@+id/Vehicle_type"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.31" />
+
+    <SeekBar
+        android:id="@+id/Rating"
+        android:layout_width="240dp"
+        android:layout_height="39dp"
+        android:layout_marginTop="13dp"
+        android:max="5"
+        app:layout_constraintTop_toBottomOf="@+id/TrackName"
+        tools:layout_editor_absoluteX="33dp" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="191dp"
+        android:layout_height="54dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="222dp"
+        android:layout_marginEnd="161dp"
+        android:layout_marginBottom="184dp"
+        android:text="Add vehiclelist"
+        app:layout_constraintBottom_toTopOf="@+id/ListViewTracks"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ListView
+        android:id="@+id/ListViewTracks"
+        android:layout_width="390dp"
+        android:layout_height="312dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="108dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button" />
+
+    <TextView
+        android:id="@+id/viewtrack"
+        android:layout_width="159dp"
+        android:layout_height="37dp"
+        android:text="TextView"
+        tools:layout_editor_absoluteX="52dp"
+        tools:layout_editor_absoluteY="38dp" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
